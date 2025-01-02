@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
   return (
@@ -120,7 +120,7 @@ const Home = () => {
         </div>
 
         {/* 3 */}
-        <div className='col-start-3 col-end-5 row-start-1 row-end-4  border-[#262626] border-[1px] flex flex-col gap-[20px] p-[20px] '>
+        <div className='col-start-3 col-end-5 row-start-1 row-end-4  border-[#262626] border-[1px] flex flex-col justify-between  px-[20px] py-[40px]'>
 
           {/* 3.1 */}
           <div className='flex justify-between'>
@@ -137,8 +137,171 @@ const Home = () => {
               <p className='text-[16px]'>No-code and low-code platforms will democratize web development, enabling non-developers to create complex web applications with minimal coding knowledge.</p>
             </div>
           </div>
+
+          {/* 3.2 */}
+          <div className='flex justify-between'>
+
+            {/* 3.2.1 */}
+            <div className='bg-[#1A1A1A] p-[10px] inter w-[340px] rounded-[10px]'>
+              <h2 className='text-[18px] font-medium mb-[10px]'>Progressive Web Apps (PWAs) Becoming Standard</h2>
+              <p className='text-[16px]'>Progressive Web Apps (PWAs) will continue to gain traction, offering the benefits of both web and mobile apps.</p>
+            </div>
+
+            {/* 3.2.2 */}
+            <div className='bg-[#1A1A1A] p-[10px] inter w-[340px] rounded-[10px]'>
+              <h2 className='text-[18px] font-medium mb-[10px]'>Enhanced Web Security and Privacy</h2>
+              <p className='text-[16px]'>With increasing concerns over data privacy and cybersecurity, web development will see a stronger focus on building secure and privacy-centric websites.</p>
+            </div>
+          </div>
+
+          {/* 3.3 */}
+          <div className='flex justify-between'>
+
+            {/* 3.3.1 */}
+            <div className='bg-[#1A1A1A] p-[10px] inter w-[340px] rounded-[10px]'>
+              <h2 className='text-[18px] font-medium mb-[10px]'>Component-Based Architecture is Dominating</h2>
+              <p className='text-[16px]'>Modern web development is increasingly driven by component-based frameworks like React, Vue, and Angular.</p>
+            </div>
+
+            {/* 3.3.2 */}
+            <div className='bg-[#1A1A1A] p-[10px] inter w-[340px] rounded-[10px]'>
+              <h2 className='text-[18px] font-medium mb-[10px]'>Emphasis on Performance and User Experience (UX)</h2>
+              <p className='text-[16px]'>JAMstack (JavaScript, APIs, Markup) is becoming a popular architecture for building fast, scalable, and secure websites.</p>
+            </div>
+          </div>
+
+          {/* 3.4 */}
+          <div className='flex justify-between'>
+
+            {/* 3.4.1 */}
+            <div className='bg-[#1A1A1A] p-[10px] inter w-[340px] rounded-[10px]'>
+              <h2 className='text-[18px] font-medium mb-[10px]'>The Shift Toward JAMstack</h2>
+              <p className='text-[16px]'>Web developers are increasingly focusing on optimizing performance and enhancing user experience.</p>
+            </div>
+
+            {/* 3.4.2 */}
+            <div className='bg-[#1A1A1A] p-[10px] inter w-[340px] rounded-[10px]'>
+              <h2 className='text-[18px] font-medium mb-[10px]'>Growing Importance of Accessibiliy</h2>
+              <p className='text-[16px]'>Web accessibility is no longer an afterthought but a fundamental aspect of web development.</p>
+            </div>
+          </div>
         </div>
 
+      </div>
+
+      {/* Section 5 */}
+      <div className='p-[100px] bg-[#1a1a1a] flex justify-between items-center'>
+        <div>
+          <h3 className='bg-[#333333] text-[20px] font-medium rounded-[10px] w-[280px] p-[10px]'>A Knowledge Treasure Trove</h3>
+          <h1 className='font-medium kumbh text-[54px]'>Explore All Blog Posts</h1>
+        </div>
+        <Link href='' className='bg-[#141414] flex items-center rounded-[10px] p-[20px]'><p>
+          View All Blogs</p> <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='size-[15px] text-[#FFD11A] ml-[10px]' /></Link>
+      </div>
+
+      {/* Section 6 */}
+      <div className='px-[100px]'>
+
+        {/* 1 */}
+        <div className='py-[100px] flex justify-between items-center border-[#262626] border-b-[1px]'>
+
+          {/* 1.1 */}
+          <div className='flex justify-start items-center gap-[20px]'>
+            <div className='w-[50px] h-[50px] bg-blue-400 rounded-full flex justify-center items-center'>
+              <FontAwesomeIcon icon={faUser} className='size-[25px] ' />
+            </div>
+            <div >
+              <h4 className='text-[20px] font-semibold'>Kunal Sonne</h4>
+              <p>SY-IT Student</p>
+            </div>
+          </div>
+
+          {/* 1.2 */}
+          <div className='flex flex-col gap-[15px] w-[700px]'>
+            <p>August 2, 2024</p>
+            <h3 className='text-[26px] font-semibold'>SvelteCraft: Mastering Lightweight Web Apps</h3>
+            <p>SvelteKit is a framework for building fast, modern web applications using Svelte.</p>
+          </div>
+
+          {/* 1.3 */}
+          <Link href='' className='bg-[#141414] flex items-center rounded-[10px] p-[20px]'><p>
+          View Blog</p> <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='size-[15px] text-[#FFD11A] ml-[10px]' /></Link>
+        </div>
+
+        {/* 2 */}
+        <div className='py-[100px] flex justify-between items-center border-[#262626] border-b-[1px]'>
+
+          {/* 2.1 */}
+          <div className='flex justify-start items-center gap-[20px]'>
+            <div className='w-[50px] h-[50px] bg-blue-400 rounded-full flex justify-center items-center'>
+              <FontAwesomeIcon icon={faUser} className='size-[25px] ' />
+            </div>
+            <div >
+              <h4 className='text-[20px] font-semibold'>Raj Thakur</h4>
+              <p>SY-IT Student</p>
+            </div>
+          </div>
+
+          {/* 2.2 */}
+          <div className='flex flex-col gap-[15px] w-[700px]'>
+            <p>August 5, 2024</p>
+            <h3 className='text-[26px] font-semibold'>NextWave: Navigating the Future of React</h3>
+            <p>Next.js is a React framework that enables hybrid static and server rendering, route pre-fetching, and much more.</p>
+          </div>
+
+          {/* 2.3 */}
+          <Link href='' className='bg-[#141414] flex items-center rounded-[10px] p-[20px]'><p>
+          View Blog</p> <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='size-[15px] text-[#FFD11A] ml-[10px]' /></Link>
+        </div>
+
+        {/* 3 */}
+        <div className='py-[100px] flex justify-between items-center border-[#262626] border-b-[1px]'>
+
+          {/* 3.1 */}
+          <div className='flex justify-start items-center gap-[20px]'>
+            <div className='w-[50px] h-[50px] bg-blue-400 rounded-full flex justify-center items-center'>
+              <FontAwesomeIcon icon={faUser} className='size-[25px] ' />
+            </div>
+            <div >
+              <h4 className='text-[20px] font-semibold'>Hariom</h4>
+              <p>SY-IT Student</p>
+            </div>
+          </div>
+
+          {/* 3.2 */}
+          <div className='flex flex-col gap-[15px] w-[700px]'>
+            <p>August 10, 2024</p>
+            <h3 className='text-[26px] font-semibold'>RemixRoute: The Art of Seamless Web Experiences</h3>
+            <p>Remix is a new full-stack web framework  providing a cut-edge experience by leveraging modern web standards.</p>
+          </div>
+
+          {/* 3.3 */}
+          <Link href='' className='bg-[#141414] flex items-center rounded-[10px] p-[20px]'><p>
+          View Blog</p> <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='size-[15px] text-[#FFD11A] ml-[10px]' /></Link>
+        </div>
+      </div>
+
+      {/* Section 7 */}
+      <div className='p-[100px] bg-[#1a1a1a] flex justify-between items-center'>
+        <div>
+          <h3 className='bg-[#333333] text-[20px] font-medium rounded-[10px] w-[370px] p-[10px]'>Your Gateway to In-Depth Information</h3>
+          <h1 className='font-medium kumbh text-[54px] w-[900px]'>Unlock Valuable Knowledge with FutureTech&apos;s Resources</h1>
+        </div>
+        <Link href='' className='bg-[#141414] flex items-center rounded-[10px] p-[20px]'><p>
+          View All REsources</p> <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='size-[15px] text-[#FFD11A] ml-[10px]' /></Link>
+      </div>
+
+      {/* Section 8 */}
+      <div className='p-[100px] flex justify-between items-center'>
+
+        {/* 1 */}
+        <div className='flex flex-col gap-[20px] w-[600px]'>
+          <Image src='/images/icon-6.png' width={80} height={80} alt='Icon' />
+          <h2 className='kumbh text-[40px] font-semibold'>Free Resources to Learn</h2>
+          <p>video tutorials that walk through building a project from scratch using different frameworks.</p>
+          <Link href='' className='px-[50px] py-[16px] bg-[#1a1a1a] text-center flex items-center justify-center rounded-[10px]'><p>Explore all Resources</p> <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='size-[15px] text-[#FFD11A] ml-[10px]' /></Link>
+          <p className='px-[50px] py-[16px] bg-[#1a1a1a] rounded-[10px] text-center'>Explored by <span className='text-[24px] font-semibold text-white '>10 + Users</span></p>
+        </div>
       </div>
     </div>
   )
