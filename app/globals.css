@@ -39,6 +39,17 @@ body {
 
 #grid-container {
   display: grid;
-  grid-template-columns: repeat(5, 240px);
+  grid-template-columns: repeat(5, 248px);
   grid-template-rows: 300px 300px 200px;
+}
+
+#grid-container2 {
+  display: grid;
+  grid-template-columns: 250px 250px 370px 370px;
+  grid-template-rows: repeat(3, 300px);
+}
+
+p {
+  color: #98989A;
+  font-size: 18px;
 }
